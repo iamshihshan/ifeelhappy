@@ -1,0 +1,32 @@
+<!-- hello_world.html -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>I come from template!!</title>
+        <style>
+            body {
+               background-color: lightyellow;
+            }
+            em {
+                color: LightSeaGreen;
+            }
+        </style>
+    </head>
+    <body>
+      <h1>Hello</h1>
+      <h1>{{endofpath}}</h1>
+      <h1>{{name}}</h1>
+      <h1>!</h1>
+        <em>{{ current_time }}</em>
+
+      <form action="/your-name/" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit" />
+      </form>
+
+
+
+    </body>
+</html>
